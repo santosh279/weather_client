@@ -2,7 +2,7 @@ import * as Types from "../Constants/action_types";
 import axios from "axios";
 
 export function getCityData(city) {
-  let request = axios.get(`http://localhost:3003/weather/getcitydata/${city}`);
+  let request = axios.get(`http://localhost:3003/weather/get_city_data/${city}`);
   return dispatch => {
     request
       .then(res => {
